@@ -8,19 +8,17 @@ import Signup from './pages/signup/Signup';
 
 const App = () => {
   return (
-    <div>
-      <Router>
-        <Routes>
-          <Route element={<RootLayout />}>
-            <Route path='/' element={<Home />} />
-            <Route path='/about' element={<About />} />
-            <Route path='/profile' element={<Profile />} />
-            <Route path='/signin' element={<Signin />} />
-            <Route path='/signup' element={<Signup />} />
-          </Route>
-        </Routes>
-      </Router>
-    </div>
+    <Router>
+      <Routes>
+        <Route element={<RootLayout />}>
+          <Route path='/' element={<Home />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/profile' element={<Profile />} />
+          <Route path='/signin' element={<Signin />} />
+          <Route path='/signup' element={<Signup />} />
+        </Route>
+      </Routes>
+    </Router>
   );
 };
 
